@@ -1,0 +1,33 @@
+.header__logo {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--accent);
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    &::before {
+        content: 'K';
+        font-size: 28px;
+        position: absolute;
+        top: 5px;
+        left: -45px;
+        background: var(--accent);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        transform: rotateY(80deg);
+        perspective: 400;
+        transform-origin: right center;
+    }
+    &::after {
+        content: 'Самое лучшее для вас';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        font-size: 10px;
+    }
+}
