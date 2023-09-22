@@ -1,0 +1,40 @@
+@@include('sort.html')
+<div class="smartphones">
+    <div class="container">
+        <div class="smartphones-wrapper">
+            <div class="smartphones-cards">
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+                @@include('smartphone-card.html')
+            </div>
+            <div class="smartphones-filter">
+                <h1 class="smartphones-filter__heading">Фильтры</h1>
+                <details class="smartphones-filter-checkboxes">
+                    <summary class="smartphones-filter-checkboxes__heading">
+                        <span>Встроенная память</span>
+                        <img class="drop-down-arrow" src="./img/arrow.svg" alt="">
+                    </summary>
+                    <ul class="smartphones-filter-checkboxes-list">
+                        <li>
+                            <label><input type="checkbox" name="RAM" />64 ГБ</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />128 ГБ</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />256 ГБ</label>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>
