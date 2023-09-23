@@ -1,0 +1,1 @@
+!function(){const e=document.querySelectorAll(".smartphones-filter-item__heading"),t=document.querySelectorAll(".drop-down-arrow");e.forEach(((e,o)=>{e.addEventListener("click",(()=>{t[o].classList.toggle("active")}))}))}();

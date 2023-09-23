@@ -405,12 +405,26 @@
             </div>
             <div class="smartphones-filter">
                 <h1 class="smartphones-filter__heading">Фильтры</h1>
-                <details class="smartphones-filter-checkboxes">
-                    <summary class="smartphones-filter-checkboxes__heading">
+                <!-- Цена -->
+                <details class="smartphones-filter-item" open>
+                    <summary class="smartphones-filter-item__heading">
+                        <span>Цена</span>
+                        <img class="drop-down-arrow" src="./img/arrow.svg" alt="">
+                    </summary>
+                    <div class="price-inputs">
+                        <input type="number" class="checkbox-input" value="2490">
+                        <span>–</span>
+                        <input type="number" class="checkbox-input" value="199990">
+                    </div>
+
+                </details>
+                <!-- Встроенная память -->
+                <details class="smartphones-filter-item" open>
+                    <summary class="smartphones-filter-item__heading">
                         <span>Встроенная память</span>
                         <img class="drop-down-arrow" src="./img/arrow.svg" alt="">
                     </summary>
-                    <ul class="smartphones-filter-checkboxes-list">
+                    <ul class="smartphones-filter-item-list">
                         <li>
                             <label><input type="checkbox" name="RAM" />64 ГБ</label>
                         </li>
@@ -419,6 +433,81 @@
                         </li>
                         <li>
                             <label><input type="checkbox" name="RAM" />256 ГБ</label>
+                        </li>
+                    </ul>
+                </details>
+                <!-- Оперативная память -->
+                <details class="smartphones-filter-item" open>
+                    <summary class="smartphones-filter-item__heading">
+                        <span>Оперативная память</span>
+                        <img class="drop-down-arrow" src="./img/arrow.svg" alt="">
+                    </summary>
+                    <ul class="smartphones-filter-item-list">
+                        <li>
+                            <label><input type="checkbox" name="RAM" />2 ГБ</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />4 ГБ</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />6 ГБ</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />8 ГБ</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />10 ГБ</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />12 ГБ</label>
+                        </li>
+                    </ul>
+                </details>
+                <!-- Бренд -->
+                <details class="smartphones-filter-item" open>
+                    <summary class="smartphones-filter-item__heading">
+                        <span>Бренд</span>
+                        <img class="drop-down-arrow" src="./img/arrow.svg" alt="">
+                    </summary>
+                    <ul class="smartphones-filter-item-list">
+                        <li>
+                            <label><input type="checkbox" name="RAM" />DOOGEE</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />Apple</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />ITEL</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />Relame</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />Samsung</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />Xiaomi</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />TECNO</label>
+                        </li>
+                    </ul>
+                </details>
+                <!-- Тип экрана -->
+                <details class="smartphones-filter-item" open>
+                    <summary class="smartphones-filter-item__heading">
+                        <span>Тип экрана</span>
+                        <img class="drop-down-arrow" src="./img/arrow.svg" alt="">
+                    </summary>
+                    <ul class="smartphones-filter-item-list">
+                        <li>
+                            <label><input type="checkbox" name="RAM" />OLED</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />IPS</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" name="RAM" />AMOLED</label>
                         </li>
                     </ul>
                 </details>
