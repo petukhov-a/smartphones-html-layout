@@ -1,0 +1,57 @@
+.cart-item {
+    display: grid;
+    grid-template-columns: min-content 7fr 4fr min-content;
+    padding: 30px 0;
+    
+    &__img {
+        margin-right: 30px;
+        width: 80px;
+        height: 80px;
+
+        img {
+            object-fit: fill;
+            object-position: center center;
+        }
+    }
+
+    &-desq {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &-desq__title {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .smartphone-price {
+        font-size: 24px;
+    }
+
+    &-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 45px;
+    }
+
+    &-count {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+        }
+
+        input {
+            width: 24px;
+            margin: 0 8px;
+            text-align: center;
+            border-bottom: 1px solid rgb(179, 179, 183);
+        }
+    }
+
+}

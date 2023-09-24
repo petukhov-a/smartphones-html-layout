@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>React Smartphones</title>
-		<link rel="stylesheet" href="./css/main.css" />
-		<link href="https://fonts.cdnfonts.com/css/pt-root-ui" rel="stylesheet">
-		<link rel="stylesheet" href="./fonts/SynNova/syn_nova_light.css" />
-	</head> 
-	<body>
-		<header class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Smartphones</title>
+</head>
+<body>
+    <header class="header">
     <div class="container">
         <div class="header-row">
             <div class="header-logo">
@@ -19,10 +15,11 @@
             </div>
             <div class="header__input-wrapper">
                 <input type="text" class="header__input" placeholder="Найти смартфон">
-                <img src="./../img/search.svg" alt="" class="header__search-img">
+                <img src="./img/search.svg" alt="" class="header__search-img">
             </div>
             <nav class="nav">
     <a href="">
+        <!-- <img src="./img/favorites.svg" alt="" class="nav__favorites-img"> -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 24 24">
             <g id="Bookmark">
               <path d="M17.6,21.945a1.483,1.483,0,0,1-1.01-.4l-4.251-3.9a.5.5,0,0,0-.68,0L7.409,21.545a1.5,1.5,0,0,1-2.516-1.1V4.57a2.5,2.5,0,0,1,2.5-2.5h9.214a2.5,2.5,0,0,1,2.5,2.5V20.442a1.481,1.481,0,0,1-.9,1.374A1.507,1.507,0,0,1,17.6,21.945ZM12,16.51a1.5,1.5,0,0,1,1.018.395l4.251,3.9a.5.5,0,0,0,.839-.368V4.57a1.5,1.5,0,0,0-1.5-1.5H7.393a1.5,1.5,0,0,0-1.5,1.5V20.442a.5.5,0,0,0,.839.368L10.983,16.9A1.5,1.5,0,0,1,12,16.51Z"/>
@@ -30,11 +27,13 @@
           </svg>
         <p>Избранное</p>
     </a>
-    <a href="./../pages/cartPage.html">
+    <a href="#">
+        <!-- <img src="./img/cart.svg" alt="" class="nav__cart-img"> -->
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 32 32" version="1.1">
             <g id="icomoon-ignore">
             </g>
             <path d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z" fill="#000000">
+            
             </path>
             </svg>
         <p>Корзина</p>
@@ -43,7 +42,7 @@
         </div>
     </div>
 </header>
-		<div class="sort">
+    <div class="sort">
     <div class="container">
         <h1 class="sort__heading">Смартфоны <span>10 товаров</span></h1>
         <div class="sort__list">
@@ -70,7 +69,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -83,9 +82,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -103,7 +100,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -116,9 +113,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -136,7 +131,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -149,9 +144,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -169,7 +162,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -182,9 +175,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -202,7 +193,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -215,9 +206,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -235,7 +224,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -248,9 +237,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -268,7 +255,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -281,9 +268,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -301,7 +286,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -314,9 +299,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -334,7 +317,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -347,9 +330,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -367,7 +348,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -380,9 +361,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -400,7 +379,7 @@
             <div class="smartphone-card-desq">
                 <div class="smartphone-card-heading">
                     <h1 class="smartphone-card__name">Смартфон DOOGEE V30 8/256Gb, черный</h1>
-                    <p class="smartphone-id">Код товара: 1968430</p>
+                    <p class="smartphone-card__id">Код товара: 1968430</p>
                 </div>
                 <div class="separator"></div>
                 <div class="smartphone-card-specs">
@@ -413,9 +392,7 @@
                 </div>
             </div>
             <div class="smartphone-card__add-cart">
-                <div class="smartphone-price">
-                    <p>44 190 <span>₽</span></p>
-                </div>
+                <p>44 190 <span>₽</span></p>
                 <button class="smartphone-card__add-cart-btn">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><title/><path fill="#fff" d="M12.2,9h1.6V6.8H16V5.2H13.8V3H12.2V5.2H10V6.8h2.2ZM20,5v5.5L7.45,12.72,5,3H1.25a1,1,0,0,0,0,2H3.47L6.7,18H20V16H8.26l-.33-1.33L22,12.18V5ZM7,19a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,7,19Zm12,0a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,19,19Z"/></svg>
                     <span>В корзину</span>
@@ -537,6 +514,5 @@
         </div>
     </div>
 </div>
-		<script src="./js/index.bundle.js"></script>
-	</body>
+</body>
 </html>

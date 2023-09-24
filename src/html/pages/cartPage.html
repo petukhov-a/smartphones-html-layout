@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Корзина</title>
+		<link rel="stylesheet" href="./../css/main.css" />
+		<link href="https://fonts.cdnfonts.com/css/pt-root-ui" rel="stylesheet">
+		<link rel="stylesheet" href="./fonts/SynNova/syn_nova_light.css" />
+	</head> 
+	<body>
+        @@include("./../blocks/header.html")
+        <div class="cart">
+            <div class="container">
+                <div class="cart-wrapper">
+                    <a href="./../index.html" class="cart__exit">Вернуться к покупкам</a>
+                    <h1 class="cart__heading">Корзина</h1>
+					<div class="cart-items">
+						@@include("./../blocks/cartItem.html")
+					</div>
+                </div>
+            </div>
+        </div>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
