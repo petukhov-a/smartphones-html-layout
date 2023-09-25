@@ -9,8 +9,8 @@
         font-weight: 700;
     }
 
-    &-items {
+    &-wrapper {
         display: grid;
-        grid-template-columns: 7fr 1fr;
+        grid-template-columns: 4fr 1fr;
     }
 }

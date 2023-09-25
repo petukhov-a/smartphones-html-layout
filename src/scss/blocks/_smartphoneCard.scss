@@ -65,28 +65,11 @@
             height: 17px;
         }
 
-        span {
-            color: #b3b3b7;
-        }
-
-        &-btn {
-            width: 140px;
-            height: 40px;
-            background-color: var(--accent);
-            border-radius: 5px;
+        .add-cart-btn {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 5px;
-            span {
-                font-size: 16px;
-                font-weight: 500;
-                color: #fff;
-            }
-        }
-
-        &-btn:hover {
-            filter: brightness(105%);
         }
     }
 }

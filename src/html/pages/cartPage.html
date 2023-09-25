@@ -13,12 +13,20 @@
         @@include("./../blocks/header.html")
         <div class="cart">
             <div class="container">
+				<div class="cart-heading">
+					<a href="./../index.html" class="cart__exit">Вернуться к покупкам</a>
+					<h1 class="cart__heading">Корзина</h1>
+				</div>
                 <div class="cart-wrapper">
-                    <a href="./../index.html" class="cart__exit">Вернуться к покупкам</a>
-                    <h1 class="cart__heading">Корзина</h1>
 					<div class="cart-items">
 						@@include("./../blocks/cartItem.html")
+						@@include("./../blocks/cartItem.html")
+						@@include("./../blocks/cartItem.html")
+						@@include("./../blocks/cartItem.html")
+						@@include("./../blocks/cartItem.html")
+						@@include("./../blocks/cartItem.html")
 					</div>
+					@@include("./../blocks/cartInfo.html")
                 </div>
             </div>
         </div>
