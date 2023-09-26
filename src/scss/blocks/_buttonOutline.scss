@@ -1,0 +1,35 @@
+.btn-outline {
+    width: max-content;
+    background-color: #fff;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    padding: 10px;
+    span {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--accent);
+    }
+
+    &:hover {
+        background-color: var(--accent);
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.btn-outline.add-cart-btn {
+    svg {
+        path {
+            fill: var(--accent);
+        }
+    }
+
+    &:hover {
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+}

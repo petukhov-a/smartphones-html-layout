@@ -49,6 +49,11 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        font-size: 14px;
+
+        span {
+            color: #5d5d64;
+        }
     }
 
     &__add-cart {
@@ -59,17 +64,5 @@
         align-items: flex-end;
         flex-direction: column;
         gap: 20px;
-
-        svg {
-            width: 17px;
-            height: 17px;
-        }
-
-        .add-cart-btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-        }
     }
 }

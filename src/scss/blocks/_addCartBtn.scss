@@ -1,0 +1,12 @@
+.add-cart-btn {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    svg {
+        width: 17px;
+        height: 17px;
+    }
+}
