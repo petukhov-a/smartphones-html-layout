@@ -2,5 +2,22 @@
     &__heading {
         font-size: 32px;
         font-weight: 700;
+        margin-bottom: 30px;
     }
+
+    &-content {
+        display: flex;
+        gap: 50px;
+
+        &-side-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &-cards {
+        margin-top: 20px;
+    }
+
 }

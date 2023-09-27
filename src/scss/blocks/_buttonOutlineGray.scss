@@ -1,34 +1,34 @@
-.btn-outline {
+.btn-outline-gray {
     width: 182px !important;
     background-color: #fff;
-    border: 1px solid var(--accent);
+    border: 1px solid #5d5d64;
     border-radius: 5px;
     padding: 10px;
     span {
         font-size: 16px;
         font-weight: 500;
-        color: var(--accent);
+        color: #5d5d64;
     }
 
     &:hover {
-        background-color: var(--accent);
+        border: 1px solid var(--accent);
         span {
-            color: #fff;
+            color: var(--accent);
         }
     }
 }
 
-.btn-outline.btn-icon {
+.btn-outline-gray.btn-icon {
     svg {
         path {
-            fill: var(--accent);
+            fill: #5d5d64;
         }
     }
 
     &:hover {
         svg {
             path {
-                fill: #fff;
+                fill: var(--accent);
             }
         }
     }
