@@ -1,0 +1,18 @@
+.smartphones {
+    &-cards {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    
+    &__heading {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        span {
+            color: #B3B3B7;
+            font-weight: 400;
+        }
+    }
+}

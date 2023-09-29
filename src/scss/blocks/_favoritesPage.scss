@@ -10,9 +10,14 @@
         gap: 50px;
 
         &-side-btns {
+            width: 200px;
             display: flex;
             flex-direction: column;
             gap: 10px;
+
+            button {
+                width: 100%;
+            }
         }
     }
 

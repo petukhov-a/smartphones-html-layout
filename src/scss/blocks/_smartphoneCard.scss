@@ -1,5 +1,6 @@
 .smartphone-card {
-    padding: 50px 20px;
+    padding: 30px 20px;
+    position: relative;
 
     &-wrapper {
         display: grid;
@@ -65,4 +66,25 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    &__add-favorites {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        &.active, &:hover {
+            svg {
+                path {
+                    fill: var(--accent);
+                }
+            }
+        }
+    }
+
 }
