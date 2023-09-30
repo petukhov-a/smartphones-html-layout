@@ -1,6 +1,6 @@
 .card-container {
-    padding: 30px;
-    padding-top: 40px;
+    padding: 3rem;
+    padding-top: 4rem;
 
     &:hover {
         .favorites-card__cart-btn {
@@ -13,43 +13,41 @@
 .favorites-card {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
     position: relative;
 
     &__name {
-        font-size: 16px;
+        font-size: 1.6rem;
         word-break: break-word;
-        line-height: 23px;
+        line-height: 2.3rem;
     }
 
     &__img {
-        width: 190px;
-        height: 170px;
+        width: 19rem;
+        height: 17rem;
         object-fit: contain;
     }
 
     .price {
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 
-    &-actions {
+    &__remove-btn {
         position: absolute;
         top: 0;
         right: 0;
         cursor: pointer;
 
-        &__remove {
-            svg {
-                width: 20px;
-                height: 20px;
-            }
+        svg {
+            width: 2rem;
+            height: 2rem;
         }
     }
 
     &__cart-btn {
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -63,11 +61,15 @@
         background-color: var(--accent);
 
         svg {
-            width: 18px;
-            height: 18px;
+            width: 1.8rem;
+            height: 1.8rem;
             path {
                 fill: #fff;
             }
+        }
+
+        &:hover {
+            filter: brightness(105%);
         }
     }
 }

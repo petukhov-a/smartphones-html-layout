@@ -1,18 +1,26 @@
 .smartphones {
-    &-cards {
-        margin-top: 20px;
+    &-content {
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: 4fr 1fr;
     }
     
     &__heading {
-        font-size: 40px;
+        font-size: 4rem;
         font-weight: 700;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
 
         span {
             color: #B3B3B7;
             font-weight: 400;
+        }
+    }
+}
+
+@media(max-width: 1280px) {
+    .smartphones {
+        &-content {
+            grid-template-columns: auto auto;
         }
     }
 }

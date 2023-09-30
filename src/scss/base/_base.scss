@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 
 body {
@@ -7,3 +8,9 @@ body {
 	color: var(--text-color);
     font-family: var(--font-main);
 }
+
+// @media(max-width: 1370px) {
+//     html {
+// 		font-size: 55%;
+// 	}
+// }

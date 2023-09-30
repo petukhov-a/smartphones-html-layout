@@ -1,37 +1,38 @@
 .smartphone-card {
-    padding: 30px 20px;
+    padding: 3rem 2rem;
     position: relative;
+    width: max-content;
 
     &-wrapper {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        gap: 50px;
+        gap: 5rem;
         position: relative;
 
         &::before {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -50px;
+            bottom: -5rem;
             width: 100%;
-            height: 1px;
+            height: 0.1rem;
             background: #ccc;
             opacity: 0.2;   
         }
     }
 
     &__img {
-        width: 220px;
-        height: 220px;
+        width: 22rem;
+        height: 22rem;
     }
 
     &-desq {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 2rem;
         .separator {
-            width: 400px;
-            height: 1px;
+            width: 40rem;
+            height: 0.1rem;
             background: #ccc;
             opacity: 0.2;
         }
@@ -42,15 +43,15 @@
     }
 
     &__name {
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
 
     &-specs {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        font-size: 14px;
+        gap: 1rem;
+        font-size: 1.4rem;
 
         span {
             color: #5d5d64;
@@ -58,13 +59,13 @@
     }
 
     &__add-cart {
-        font-size: 32px;
+        font-size: 3.2rem;
         font-weight: 500;
         margin-top: auto;
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        gap: 20px;
+        gap: 2rem;
     }
 
     &__add-favorites {
@@ -74,8 +75,8 @@
         cursor: pointer;
 
         svg {
-            width: 20px;
-            height: 20px;
+            width: 2rem;
+            height: 2rem;
         }
 
         &.active, &:hover {
@@ -86,5 +87,23 @@
             }
         }
     }
+}
 
+@media(max-width: 1280px) {
+    .smartphone-card {
+        &-wrapper {
+            grid-template-columns: 25rem 35rem 5.5rem;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "header header header"
+                ". order order";
+        }
+
+        &__add-cart {
+            grid-area: order;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
 }

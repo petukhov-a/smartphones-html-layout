@@ -2,9 +2,10 @@
     &__list {
         ul {
             display: flex;
-            gap: 8px;
+            gap: 0.8rem;
 
             li {
+                font-size: 1.6rem;
                 cursor: pointer;
             }
 

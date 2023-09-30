@@ -1,5 +1,5 @@
 .header {
-	padding: 50px 0;
+	padding: 5rem 0;
 
 	&-row {
 		display: flex;
@@ -7,21 +7,28 @@
 		align-items: center;
 	}
 
-	&__input {
-		width: 500px;
-		height: 20px;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		padding-bottom: 10px;
-		transition: border-bottom 0.2s ease-in-out;
+	&-search {
+		position: relative;
 
-		&:focus, &:hover {
-			border-bottom: 1px solid var(--accent);
+		&__input {
+			font-size: 1.6rem;
+			width: 50rem;
+			height: 2rem;
+			border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+			padding-bottom: 1rem;
+			transition: border-bottom 0.2s ease-in-out;
+	
+			&:focus, &:hover {
+				border-bottom: 0.1rem solid var(--accent);
+			}
 		}
-	}
 
-	&__search-img {
-		width: 30px;
-		height: 20px;
-		transform: translateX(-30px);
+		&__icon {
+			width: 2rem;
+			height: 2rem;
+			position: absolute;
+			top: -0.5rem;
+			right: 0;
+		}
 	}
 }

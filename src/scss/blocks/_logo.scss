@@ -4,34 +4,34 @@
     align-items: center;
     color: var(--accent);
     position: relative;
-    perspective: 90px;
+    perspective: 9rem;
     cursor: pointer;
 
     &__letter {
-        font-size: 23px;
+        font-size: 2.3rem;
         background: var(--accent);
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 25px;
-        height: 25px;
-        border-radius: 5px;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
         transform: rotateY(80deg);
         transform-origin: right center;
-        margin-right: 10px;
+        margin-right: 1rem;
     }
 
     &__text {
-        font-size: 35px;
+        font-size: 3.5rem;
         position: relative;
     }
 
     &__text::after {
         content: 'самое лучшее для вас';
         position: absolute;
-        bottom: -5px;
+        bottom: -0.5rem;
         left: 0;
-        font-size: 10px;
+        font-size: 1rem;
     }
 }
