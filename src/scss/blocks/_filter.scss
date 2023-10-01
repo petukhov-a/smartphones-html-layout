@@ -1,5 +1,6 @@
 .smartphones-filter {
     padding: 3rem 3rem;
+
     height: min-content;
     background-color: #f5f5f6;
 
@@ -24,10 +25,9 @@
             align-items: center;
 
             input {
-                width: 8.5rem;
+                // width: 8.5rem;
                 height: 3rem;
                 font-size: 1.6rem;
-                text-align: center;
             }
 
             span {
