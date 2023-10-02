@@ -16,11 +16,3 @@
         }
     }
 }
-
-@media(max-width: 1280px) {
-    .smartphones {
-        &-content {
-            grid-template-columns: auto auto;
-        }
-    }
-}

@@ -1,4 +1,5 @@
 .smartphones-filter {
+    width: max-content;
     padding: 3rem 3rem;
 
     height: min-content;
@@ -25,7 +26,7 @@
             align-items: center;
 
             input {
-                // width: 8.5rem;
+                width: 8.5rem;
                 height: 3rem;
                 font-size: 1.6rem;
             }

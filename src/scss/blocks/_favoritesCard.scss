@@ -23,9 +23,14 @@
     }
 
     &__img {
-        width: 19rem;
-        height: 17rem;
-        object-fit: contain;
+        width: 17rem;
+        height: 14rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
     .price {
@@ -35,7 +40,7 @@
     &__remove-btn {
         position: absolute;
         top: 0;
-        right: 0;
+        right: -20px;
         cursor: pointer;
 
         svg {
