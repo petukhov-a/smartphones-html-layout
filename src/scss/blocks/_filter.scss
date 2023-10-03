@@ -75,3 +75,18 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .smartphones-filter {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+
+        &.active {
+            display: block;
+            right: 0;
+        }
+    }
+}

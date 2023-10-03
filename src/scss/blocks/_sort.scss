@@ -14,4 +14,32 @@
             }
         }
     }
+
+    &-mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 1024px) {
+    .sort {
+        &__list {
+            display: none;
+        }
+
+        &-mobile {
+            display: block;
+            font-size: 1.6rem;
+
+            &-btn {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                img {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                }
+            }
+        }
+    }
 }
