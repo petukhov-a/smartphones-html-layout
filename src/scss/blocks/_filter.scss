@@ -87,6 +87,7 @@
         &.active {
             display: block;
             right: 0;
+            z-index: 102;
         }
     }
 }

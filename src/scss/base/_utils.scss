@@ -18,3 +18,15 @@
 .no-scroll {
 	overflow-y: hidden;
 }
+
+.overlay {
+	position: fixed;
+    inset: 0px;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out 0s;
+    will-change: opacity;
+}
