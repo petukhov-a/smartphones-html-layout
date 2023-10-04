@@ -78,16 +78,21 @@
 
 @media(max-width: 1024px) {
     .smartphones-filter {
-        display: none;
         position: absolute;
         top: 0;
-        right: -100%;
+        right: 0;
         height: 100vh;
+        z-index: 102;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: scroll;
 
         &.active {
-            display: block;
-            right: 0;
-            z-index: 102;
+            transform: translateX(0);
         }
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }

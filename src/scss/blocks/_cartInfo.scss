@@ -1,7 +1,6 @@
 .cart-info {
     &-wrapper {
         padding: 3rem 3rem;
-        width: max-content;
         height: min-content;
         background-color: #f5f5f6;
         display: flex;
@@ -25,12 +24,23 @@
     }
 
     .btn-goto-order {
-        width: 100%;
+        width: max-content;
         font-size: 1.6rem;
         padding: 1rem;
     }
 
-    .btn-clear-cart {
+    .cart-info-btns {
         margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media(max-width: 1024px) {
+    .cart-info {
+        .btn-goto-order {
+            width: 100%;
+        }
     }
 }

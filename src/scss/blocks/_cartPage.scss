@@ -14,3 +14,11 @@
         grid-template-columns: 4fr 1fr;
     }
 }
+
+@media(max-width: 1024px) {
+    .cart {
+        &-wrapper {
+            display: block;
+        }
+    }
+}
