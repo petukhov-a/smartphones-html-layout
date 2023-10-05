@@ -78,3 +78,9 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .card-container {
+        padding: 2rem;
+    }
+}

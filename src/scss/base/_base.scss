@@ -9,8 +9,8 @@ body {
     font-family: var(--font-main);
 }
 
-// @media(max-width: 1370px) {
-//     html {
-// 		font-size: 55%;
-// 	}
-// }
+@media(max-width: 768px) {
+    html {
+		font-size: 54%;
+	}
+}

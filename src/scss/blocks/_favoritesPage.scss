@@ -9,14 +9,13 @@
         display: flex;
         gap: 5rem;
 
-        &-side-btns {
-            width: 20rem;
+        &-btns {
             display: flex;
             flex-direction: column;
             gap: 1rem;
 
             button {
-                width: 100%;
+                width: 20rem;
             }
         }
     }
@@ -25,4 +24,25 @@
         margin-top: 2rem;
     }
 
+}
+
+@media(max-width: 1024px) {
+    .favorites {
+        &-content {
+            flex-direction: column;
+            gap: 1rem;
+
+            &-btns {
+                order: 2;
+
+                button {
+                    width: 100%;
+                }
+            }
+
+            &-main {
+                order: 1;
+            }
+        }
+    }
 }

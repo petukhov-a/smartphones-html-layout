@@ -48,13 +48,28 @@ filterBtn.addEventListener('click', () => {
 handleOutsideClick(filter, filterBtn, () => toggleFilterShowing(false));
 
 // Show sort
-const sortMenu = document.querySelector('.sort-list ul');
-const sortBtn = document.querySelector('.sort-mobile-btn');
+const sortMenu = document.querySelector('.sort-list-mobile ul');
+const sortMenuItems = document.querySelectorAll('.sort-list-mobile li');
+const sortBtn = document.querySelector('.sort-list-mobile-btn');
+const sortBtnLabel = document.querySelector('.sort-list-mobile-btn span');
 
 sortBtn.addEventListener('click', () => {
     sortMenu.style.display = 'flex';
+    sortBtn.classList.add('active');
+});
+
+sortMenuItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+        sortBtnLabel.innerHTML = event.target.innerHTML;
+    });
+});
+
+sortMenu.addEventListener('click', () => {
+    sortMenu.style.display = 'none'
+    sortBtn.classList.remove('active');
 });
 
 handleOutsideClick(sortMenu, sortBtn, () => {
     sortMenu.style.display = 'none';
+    sortBtn.classList.remove('active');
 });
