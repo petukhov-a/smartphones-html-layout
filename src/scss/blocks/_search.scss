@@ -16,32 +16,17 @@
         }
     }
 
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     background-color: #fff;
-    //     width: 50%;
-    //     height: 99%;
-    //     top: 0;
-    //     left: 0;
-    //     animation: text-typing 3s linear infinite;
-    // }
-    
-    // @keyframes text-typing {
-    //     from {
-    //         left: 0%;
-    //     }
-
-    //     to {
-    //         left: 30%;
-    //     }
-    // }
-
     &__icon {
         width: 2rem;
         height: 2rem;
         position: absolute;
         top: -0.5rem;
         right: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .header-search {
+        width: 38rem;
     }
 }

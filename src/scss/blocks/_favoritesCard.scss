@@ -40,7 +40,7 @@
     &__remove-btn {
         position: absolute;
         top: 0;
-        right: -20px;
+        right: -2rem;
         cursor: pointer;
 
         svg {
@@ -82,5 +82,11 @@
 @media(max-width: 1024px) {
     .card-container {
         padding: 2rem;
+    }
+
+    .favorites-card {
+        &__remove-btn {
+            right: -1.8rem;
+        }
     }
 }
