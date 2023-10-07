@@ -118,12 +118,12 @@
         }
 
         &__img {
-            width: 12rem;
-            height: 12rem;
+            width: 10rem;
+            height: 10rem;
         }
 
-        &-desq {
-            gap: 1rem;
+        &-specs {
+            gap: 0.5rem;
         }
 
         .price {
@@ -140,6 +140,10 @@
 
 @media(max-width: 560px) {
     .smartphone-card {
+        &-desq {
+            gap: 1rem;
+        }
+
         &-add-cart button {
             padding: 0;
             width: 30px;
