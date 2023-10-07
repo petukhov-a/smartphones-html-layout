@@ -15,6 +15,13 @@
     flex-direction: column;
     gap: 3rem;
     position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .favorites-card__name {
+            color: var(--accent);
+        }
+    }
 
     &__name {
         font-size: 1.6rem;
@@ -87,6 +94,26 @@
     .favorites-card {
         &__remove-btn {
             right: -1.8rem;
+        }
+
+        &__cart-btn {
+            opacity: 1;
+        }
+    }
+}
+
+@media(max-width: 560px) {
+    .favorites-card {
+        &__name {
+            font-size: 1.4rem;
+        }
+
+        .price {
+            font-size: 2rem;
+        }
+
+        &__img {
+            width: 15rem;
         }
     }
 }

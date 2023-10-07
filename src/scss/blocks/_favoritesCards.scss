@@ -10,8 +10,8 @@
     }
 }
 
-// @media(max-width: 980px) {
-//     .favorites-cards {
-//         grid-template-columns: repeat(2, min-content);
-//     }
-// }
+@media(max-width: 560px) {
+    .favorites-cards {
+        grid-template-columns: repeat(2, min-content);
+    }
+}
