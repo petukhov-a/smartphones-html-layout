@@ -9,6 +9,11 @@ body {
     font-family: var(--font-main);
 }
 
+html, body {
+    width: 100%;
+    position: relative;
+}
+
 @media(max-width: 768px) {
     html {
 		font-size: 54%;

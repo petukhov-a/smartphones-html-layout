@@ -1,5 +1,5 @@
 // Common
-const handleOutsideClick = (elemnt, btn, hideElement) => {
+export const handleOutsideClick = (elemnt, btn, hideElement) => {
     document.addEventListener('click', (event) => {
         const isClickInside = elemnt.contains(event.target);
         const isClickBtn = btn.contains(event.target)
@@ -47,29 +47,44 @@ filterBtn.addEventListener('click', () => {
 
 handleOutsideClick(filter, filterBtn, () => toggleFilterShowing(false));
 
-// Show sort
-const sortMenu = document.querySelector('.sort-list-mobile ul');
-const sortMenuItems = document.querySelectorAll('.sort-list-mobile li');
-const sortBtn = document.querySelector('.sort-list-mobile-btn');
-const sortBtnLabel = document.querySelector('.sort-list-mobile-btn span');
+// Setting sort menu
+const setSortMenu = (sortBtn, sortMenu, sortBtnLabel, sortMenuItems) => {
+    const showSortOnClick = (sortBtn, sortMenu) => {
+        sortBtn.addEventListener('click', () => {
+            sortMenu.style.display = 'flex';
+            sortBtn.classList.add('active');
+        });
+    }
+    
+    const selectSortItem = (sortBtnLabel, sortMenuItems) => {
+        sortMenuItems.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                sortBtnLabel.innerHTML = event.target.innerHTML;
+            });
+        });
+    }
+    
+    const hideSortOnClickItem = (sortBtn, sortMenu) => {
+        sortMenu.addEventListener('click', () => {
+            sortMenu.style.display = 'none'
+            sortBtn.classList.remove('active');
+        });
+    }
 
-sortBtn.addEventListener('click', () => {
-    sortMenu.style.display = 'flex';
-    sortBtn.classList.add('active');
-});
+    showSortOnClick(sortBtn, sortMenu);
+    selectSortItem(sortBtnLabel, sortMenuItems);
+    hideSortOnClickItem(sortBtn, sortMenu);
 
-sortMenuItems.forEach((item) => {
-    item.addEventListener('click', (event) => {
-        sortBtnLabel.innerHTML = event.target.innerHTML;
+    handleOutsideClick(sortMenu, sortBtn, () => {
+        sortMenu.style.display = 'none';
+        sortBtn.classList.remove('active');
     });
-});
+}
 
-sortMenu.addEventListener('click', () => {
-    sortMenu.style.display = 'none'
-    sortBtn.classList.remove('active');
-});
+// Main sort
+const mainSortMenu = document.querySelector('.sort-list-mobile ul');
+const mainSortMenuItems = document.querySelectorAll('.sort-list-mobile li');
+const mainSortBtn = document.querySelector('.sort-list-mobile-btn');
+const mainSortBtnLabel = document.querySelector('.sort-list-mobile-btn span');
 
-handleOutsideClick(sortMenu, sortBtn, () => {
-    sortMenu.style.display = 'none';
-    sortBtn.classList.remove('active');
-});
+setSortMenu(mainSortBtn, mainSortMenu, mainSortBtnLabel, mainSortMenuItems);
