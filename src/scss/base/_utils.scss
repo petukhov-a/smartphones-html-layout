@@ -30,3 +30,7 @@
     transition: opacity 0.3s ease-in-out;
     will-change: opacity;
 }
+
+.no-hover {
+	pointer-events: none;
+}
